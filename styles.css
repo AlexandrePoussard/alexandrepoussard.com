@@ -8,15 +8,8 @@ html, body {
     color: azure;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease;
-}
-
-@keyframes gradient {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    background: rgb(238,119,82);
+    background: linear-gradient(317deg, rgba(238,119,82,0.65) 0%, rgba(35,166,213,0.7469362745098039) 100%);
 }
 
 .card-center {

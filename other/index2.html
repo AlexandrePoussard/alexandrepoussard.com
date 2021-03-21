@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="styles2.css">
+        <title>Alexandre Poussard</title>
+    </head>
+    <body>
+        <div id="app">
+            <v-app>
+                <v-main>
+                    <v-container fluid>
+                        <v-card class="mx-auto" max-width="50%" flat color="rgba(50, 58, 76, .75)">
+                            <h1 class="text-center display-1 pt-5 pb-4">Alexandre Poussard</h1>
+
+                            <v-divider id="separator" role="presentation" aria-orientation="horizontal"></v-divider>
+
+                            <v-tabs vertical centered background-color="rgba(50, 58, 76, .75)" color="white" show-arrows>
+                                <v-tab>About</v-tab>
+                                <v-tab>Skills</v-tab>
+                                <v-tab>Projects</v-tab>
+                          
+                                <v-tab-item eager>
+                                    <v-card tile flat color="rgba(50, 58, 76, .75)">
+                                        <v-card-text class="body-2">
+                                            <p><a href="https://www.epfl.ch/en/">EPFL</a> engineer & passionate data scientist.</p>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+
+                                <v-tab-item eager>
+                                    <v-card tile flat color="rgba(50, 58, 76, .75)">
+                                        <v-card-text class="body-2">
+                                            <p>Sed aliquam ultrices mauris. Donec posuere vulputate arcu. Morbi ac felis.</p>
+                                            <p>Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Aenean t</p>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+
+                                <v-tab-item eager>
+                                    <v-card tile flat color="rgba(50, 58, 76, .75)">
+                                        <v-card-text class="body-2">
+                                            <p>Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Aenean t</p>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                            </v-tabs>
+
+                            <v-bottom-navigation height="42" background-color="rgba(50, 58, 76, .75)">
+                                <v-btn small href="https://www.linkedin.com/in/alexandrepoussard"><v-icon>mdi-linkedin</v-icon></v-btn>
+                                <v-btn small href="https://github.com/AlexandrePoussard"><v-icon>mdi-star</v-icon></v-btn>
+                            </v-bottom-navigation>
+                        </v-card>
+                    </v-container>
+                </v-main>
+            </v-app>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                vuetify: new Vuetify(),
+            })
+        </script>
+    </body>
+</html>
